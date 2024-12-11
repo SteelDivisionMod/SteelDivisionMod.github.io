@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Natron-Bold';
-    src: url('./fonts/natron-bold.otf') format('opentype');
+    src: url('https://steeldivisionmod.github.io/fonts/natron-bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,23 +18,19 @@ body {
     background-size: cover;
     background-position: center;
     font-family: 'Natron-Rough-Bold', sans-serif;
+    margin: 0; /* Ensure there is no extra space around the body */
 }
 
 .layout {
     width: 100%;
     display: grid;
-    grid-template-rows: 33%;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
+    padding: 20px; /* Add padding for better spacing */
 }
 
-a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:visited {
+a:link, a:visited {
     color: green;
     background-color: transparent;
     text-decoration: none;
@@ -49,5 +45,38 @@ a:hover {
 div {
     text-align: center;
     font-family: 'Natron-Rough-Bold', sans-serif;
-    font-size: 48px;
+    font-size: 48px; /* Default font size for larger screens */
+    word-wrap: break-word; /* Ensure long words break properly */
 }
+
+h1 {
+    font-size: 4vw; /* Responsive font size based on viewport width */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr; /* Stack the sections vertically on smaller screens */
+        grid-template-rows: auto auto auto;
+    }
+
+    div {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 6vw; /* Further adjust font size for mobile devices */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    div {
+        font-size: 28px; /* Reduce font size even more for very small screens */
+    }
+
+    h1 {
+        font-size: 8vw; /* Make h1 even smaller for very small screens */
+    }
+}
+
