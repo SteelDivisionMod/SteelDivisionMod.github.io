@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Natron-Rough-Bold';
-    src: url('./fonts/natron-rough-bold.otf') format('opentype');
+    src: url('https://steeldivisionmod.github.io/fonts/natron-rough-bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
