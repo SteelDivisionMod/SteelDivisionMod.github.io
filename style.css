@@ -1,8 +1,23 @@
+@font-face {
+    font-family: 'Natron-Bold';
+    src: url('fonts/natron-bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Natron-Rough-Bold';
+    src: url('fonts/natron-rough-bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-image: url('./images/SD_logo.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    font-family: 'Natron-Rough-Bold', sans-serif;
 }
 
 .layout {
@@ -32,5 +47,7 @@ a:hover {
 }
 
 div {
-    text-align: center
+    text-align: center;
+    font-family: 'Natron-Rough-Bold', sans-serif;
+    font-size: 48px;
 }
