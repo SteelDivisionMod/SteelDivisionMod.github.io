@@ -18,7 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     font-family: 'Natron-Rough-Bold', sans-serif;
-    margin: 0; /* Ensure there is no extra space around the body */
+    margin: 0; 
 }
 
 .layout {
@@ -27,7 +27,7 @@ body {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
-    padding: 20px; /* Add padding for better spacing */
+    padding: 20px; 
 }
 
 a:link, a:visited {
@@ -45,38 +45,38 @@ a:hover {
 div {
     text-align: center;
     font-family: 'Natron-Rough-Bold', sans-serif;
-    font-size: 48px; /* Default font size for larger screens */
-    word-wrap: break-word; /* Ensure long words break properly */
+    font-size: 48px; 
+    word-wrap: break-word; 
 }
 
 h1 {
-    font-size: 4vw; /* Responsive font size based on viewport width */
+    font-size: 4vw; 
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .layout {
-        grid-template-columns: 1fr; /* Stack the sections vertically on smaller screens */
+        grid-template-columns: 1fr; 
         grid-template-rows: auto auto auto;
     }
 
     div {
-        font-size: 36px; /* Adjust font size for smaller screens */
+        font-size: 36px; 
     }
 
     h1 {
-        font-size: 6vw; /* Further adjust font size for mobile devices */
+        font-size: 6vw; 
     }
 }
 
 /* Further adjustments for very small screens */
 @media (max-width: 480px) {
     div {
-        font-size: 28px; /* Reduce font size even more for very small screens */
+        font-size: 28px; 
     }
 
     h1 {
-        font-size: 8vw; /* Make h1 even smaller for very small screens */
+        font-size: 8vw; 
     }
 }
 
