@@ -4,3 +4,33 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.layout {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 33%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+div {
+    text-align: center
+}
