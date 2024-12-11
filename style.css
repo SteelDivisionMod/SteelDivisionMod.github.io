@@ -1,0 +1,7 @@
+body {
+    background-image: url('./images/SD_logo.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center center; /* Centers the image */
+    margin: 0;
+    height: 100vh; /* Ensures the body covers the full viewport height */
+}
