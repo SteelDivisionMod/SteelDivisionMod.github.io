@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Natron-Bold';
-    src: url('fonts/natron-bold.otf') format('opentype');
+    src: url('./fonts/natron-bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Natron-Rough-Bold';
-    src: url('fonts/natron-rough-bold.otf') format('opentype');
+    src: url('./fonts/natron-rough-bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
